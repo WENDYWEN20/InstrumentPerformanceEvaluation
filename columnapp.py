@@ -60,6 +60,11 @@ if choice=="ModelPredict":
         st.header("Predicted Standard")
         prediction
         prediction_proba
+        def load_data():
+            return pd.DataFrame({"0":["15T"],"1":["20T"],"2":["25T"],"3":["30T"],"4":["35T"]})
+        df1=load_data()
+        st.text("Class Labels and its Corresponding Standard")
+        st.dataframe(df1)
 
 
 if choice=="ModelCompare":
